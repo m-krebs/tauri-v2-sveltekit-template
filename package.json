@@ -17,12 +17,12 @@
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.22.2",
-		"@sveltejs/vite-plugin-svelte": "^4.0.4",
+		"@sveltejs/vite-plugin-svelte": "^5.1.0",
 		"@tauri-apps/cli": "^2.6.2",
 		"internal-ip": "^7.0.0",
 		"svelte": "^5.35.4",
 		"svelte-check": "^4.2.2",
 		"typescript": "^5.8.3",
-		"vite": "^5.4.19"
+		"vite": "^6.3.5"
 	}
 }
