@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { invoke } from "@tauri-apps/api/core";
+  import { invoke } from "@tauri-apps/api/core";
 
-	$: name = "";
-	$: greetMsg = "";
+  let name = $state("");
+  let greetMsg = $state("");
 
-	async function sayHello() {
-		greetMsg = await invoke("greet", { name: name });
-	}
+  async function sayHello() {
+    greetMsg = await invoke("greet", { name: name });
+  }
 </script>
 
 <input bind:value={name} type="text" id="name" placeholder="Enter your name" />
-<button on:click={sayHello}>Say Hello</button>
+<button onclick={sayHello}>Say Hello</button>
 <p>{greetMsg}</p>
